@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <servlet>
+    <description></description>
+    <display-name>hwllo</display-name>
+    <servlet-name>hwllo</servlet-name>
+    <servlet-class>com.learning.hello.hwllo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hwllo</servlet-name>
+    <url-pattern>/neeraj</url-pattern>
+  </servlet-mapping>
+  <display-name>hwllo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FibonnaciNeeraj</display-name>
+    <servlet-name>FibonnaciNeeraj</servlet-name>
+    <servlet-class>com.learning.hello.FibonnaciNeeraj</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FibonnaciNeeraj</servlet-name>
+    <url-pattern>/FibonnaciNeeraj</url-pattern>
+  </servlet-mapping>
+</web-app>
