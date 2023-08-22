@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Game</title>
+	<style>
+		div {
+			background-color: lightgrey;
+			width: 30px;
+			border: 15px solid green;
+			padding: 50px;
+			margin: 20px;
+		}
+
+	span{
+      text-align:center;
+    }
+		.button {
+			background-color: #4CAF70;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body></body>
+<form method="post" action="cardgame">
+	<div align="center" style="color: darkgreen;"><span th:text="${getcard}">DECK</span></div>
+	<input type="submit" name="button" class="button" value="Set Card"><br><br>
+	<div align="bottom" style="color: darkgreen;"><span th:text="${getinpile}">INPILE</span></div>
+	<div align="left" style="color: darkgreen;"><span th:text="${getoutpile}">OUTPILE</span></div>
+	<input type="submit" name="button" class="button" value="Enter"><br><br>
+	<h2>Results:</h2>
+	<h2>Computer's responses:</h2>
+	 <p><span th:text="${feedback}">This is gonna get replaced</span></p>
+
+</form>
+</body>
+
+</html>
