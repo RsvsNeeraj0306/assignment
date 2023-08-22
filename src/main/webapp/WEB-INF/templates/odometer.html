@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>odometer</title>
+</head>
+<body>
+	 <h1>Welcome to the game of Odometer</h1>
+	 <h2>Perform operations of three digit number 123!</h2>
+                <form method="post" action="odometer">
+                  <input type="submit" name="button" value="PreviousValue">
+                  <input type="submit" name="button" value="NextValue">
+                   <input type="submit" name="button" value="RESET">
+                </form>
+                <h2>Computer's responses:</h2>
+                <p><span th:text="${previous}">This is gonna get replaced</span></p>
+                <p><span th:text="${next}">This is gonna get replaced</span></p>
+                <p><span th:text="${reset}">This is gonna get replaced</span></p>
+				
+</body>
+</html>
