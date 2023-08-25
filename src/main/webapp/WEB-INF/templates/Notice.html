@@ -4,7 +4,90 @@
 <meta charset="UTF-8">
 <title>Notice</title>
 </head>
+<style>
+	
+	body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.notice-form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.notice-form label {
+  font-weight: bold;
+  display: block; /* Add this line to ensure labels are displayed as block elements */
+}
+
+.notice-form input[type="text"],
+.notice-form input[type="tel"],
+.notice-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.notice-form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.notice-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+	.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  background-color: #fff;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.card-content p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+</style>
 <body>
+
 <h1>Contact Form</h1>
 
  
@@ -19,7 +102,48 @@
 <label for="content">Content:</label><br>
 <textarea id="content" name="content" rows="4" cols="50" required></textarea><br><br>
 
-<input type="submit" value="Submit">
+<input type="submit" value="Submit" name="button">
+
+ <div class="card-grid">
+    <div class="card">
+      <div class="card-content">
+        <th th:text="${getcard1}">Card Title 1 change</th>
+       
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-content">
+        <th th:text="${getcard2}">Card Title 1 change</th>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-content">
+       <th th:text="${getcard3}">Card Title 1 change</th>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-content">
+       <th th:text="${getcard4}">Card Title 1 change</th>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-content">
+       <th th:text="${getcard5}">Card Title 1 change</th>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-content">
+       <th th:text="${getcard6}">Card Title 1 change</th>
+      </div>
+    </div>
+  </div>
 </form>
+ 
+       
 </body>
 </html>
